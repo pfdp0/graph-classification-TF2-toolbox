@@ -49,7 +49,7 @@ from toolbox.metrics import *
 
 class ModelExample(keras.Model):
 
-    def __init__(self, parameters, input_dim, output_dim, num_features_nonzero, **kwargs):
+    def __init__(self, parameters, input_dim, output_dim, node_num, num_features_nonzero, data=None, **kwargs):
         super(ModelExample, self).__init__(**kwargs)
         
         self.params = parameters
